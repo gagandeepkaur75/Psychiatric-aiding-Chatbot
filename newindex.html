@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clinical Communication Analysis Platform</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: #f4f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: #ffffff;
+      width: 900px;
+      max-width: 92%;
+      padding: 55px;
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 600;
+      color: #2f3e46;
+      margin-bottom: 18px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #5f6f7a;
+      line-height: 1.7;
+      margin-bottom: 42px;
+    }
+
+    .info-box {
+      background: #f1f5f9;
+      border-left: 4px solid #8ecae6;
+      padding: 22px;
+      margin-bottom: 42px;
+      text-align: left;
+      border-radius: 8px;
+      color: #4b5a63;
+      font-size: 14px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 34px;
+    }
+
+    button {
+      padding: 14px 30px;
+      font-size: 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .doctor-btn {
+      background: #8ecae6;
+      color: #1f2d38;
+    }
+
+    .doctor-btn:hover {
+      background: #76b8da;
+    }
+
+    .patient-btn {
+      background: #9cb2c8;
+      color: #2f3e46;
+      border: 1px solid #5c7a92;
+    }
+
+    .patient-btn:hover {
+      background: #dde3e8;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #7a8a94;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="logo">
+      Clinical Communication Analysis Platform
+    </div>
+
+    <div class="subtitle">
+      A psychiatrist-centric system for observing, summarizing, and reviewing
+      patient communication patterns across multiple sessions using structured AI interactions.
+    </div>
+
+    <div class="info-box">
+      This platform supports longitudinal behavioral observation through neutral,
+      non-therapeutic chatbot interactions. All interpretation, diagnosis,
+      and clinical decision-making remain entirely with the psychiatrist.
+    </div>
+
+    <div class="buttons">
+      <button class="doctor-btn" onclick="login('psychiatrist')">
+        Psychiatrist Login
+      </button>
+
+      <button class="patient-btn" onclick="login('patient')">
+        Patient Access
+      </button>
+    </div>
+
+    <div class="footer">
+      © 2026 • Designed for clinical use • Privacy-focused • No automated diagnosis
+    </div>
+  </div>
+
+  <script>
+    function login(role) {
+      if (role === "psychiatrist") {
+        alert("Psychiatrist login flow will start here.");
+      } else {
+        alert("Patient access using psychiatrist-provided credentials.");
+      }
+    }
+  </script>
+
+</body>
+</html>
